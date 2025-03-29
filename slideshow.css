@@ -1,0 +1,29 @@
+/********** slideshow.css **********/
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.FullScreenBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1.5s ease-in-out;
+    z-index: -1;
+}
+
+@keyframes fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.fade-in {
+    animation: fade 2s forwards;
+}
